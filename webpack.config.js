@@ -1,4 +1,5 @@
 const path = require('path');
+const yaml = require('yamljs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,6 +21,21 @@ module.exports = {
      {
        test: /\.(png|svg|jpg|jpeg|gif)$/i,
        type: 'asset/resource',
+     },
+     {
+      test: /\.(csv|tsv)$/i,
+      use: ['csv-loader'],
+     },
+     {
+      test: /\.xml$/i,
+      use: ['xml-loader'],
+     },
+     {
+      test: /\.yaml$/i,
+      type: 'json',
+      parser: {
+        parse: yaml.parse,
+      },
      },
     ],
   }

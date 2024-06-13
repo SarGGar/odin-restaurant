@@ -1,0 +1,5 @@
+desserts:
+  0:
+    name: Tiramisu
+    description: 'Nough said'
+    price: 10 CHF

@@ -1,0 +1,13 @@
+mains:
+  0:
+    name: Meat Dish
+    description: A hearty meat and fat filled dish.
+    price: 30 CHF
+  1:
+    name: Vege Dish
+    description: A vegetarian dish with vegetarian protein.
+    price: 26 CHF
+  2:
+    name: Pasta Dish
+    description: A wonderful comfort food pasta dish for the emotionally weak.
+    price: 24 CHF

@@ -1,0 +1,9 @@
+appetizers:
+  0:
+    name: Green Soup
+    description: A healthy vegan green soup.
+    price: 4 CHF
+  1:
+    name: Red Soup
+    description: A spicy vegan red soup.
+    price: 4 CHF
