@@ -23,12 +23,21 @@ function switchTab(e) {
 
     switch (e.target.id) {
         case 'home-tab':
+            homeTabButton.style.backgroundColor = '#fafafa'
+            menuTabButton.style.backgroundColor = '#c4c1e0'
+            aboutTabButton.style.backgroundColor = '#c4c1e0'
             loadHomePage(content)
             break;
         case 'menu-tab':
+            homeTabButton.style.backgroundColor = '#c4c1e0'
+            menuTabButton.style.backgroundColor = '#fafafa'
+            aboutTabButton.style.backgroundColor = '#c4c1e0'
             loadMenuPage(content)
             break;
         case 'about-tab':
+            homeTabButton.style.backgroundColor = '#c4c1e0'
+            menuTabButton.style.backgroundColor = '#c4c1e0'
+            aboutTabButton.style.backgroundColor = '#fafafa'
             loadAboutPage(content)
             break;
     }

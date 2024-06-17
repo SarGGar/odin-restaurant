@@ -19,6 +19,7 @@ function loadHomeHeadline() {
     const homeHeadline = document.createElement("div");
     homeHeadline.textContent = "This is my headline"
     homeHeadline.style.fontSize = "28px"
+    homeHeadline.classList.add('homepage-text')
     return homeHeadline
 }
 
@@ -26,6 +27,7 @@ function loadHomeDescription() {
     const homeDescription = document.createElement("div");
     homeDescription.textContent = "This is the best restaurant in the world"
     homeDescription.style.fontSize = "18px"
+    homeDescription.classList.add('homepage-text')
     return homeDescription
 }
 

@@ -1,27 +1,109 @@
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+:root {
+    --light-gray: #fafafa;
+    --light-pink: #ffe9e3;
+    --light-purple: #c4c1e0;
+    --accent-purple: #7c73e6;
+
+    --homepage-width: 300px;
 }
 
+html {
+    height: 100vh;
+    border: 0px;
+    margin: 0px;
+}
 
-.container, .menu-section {
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--light-purple);
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 0px;
+    border: 0px;
+
+}
+
+nav {
+    font-size: 0px;
+}
+
+button {
+    background-color: var(--light-purple);
+    color: var(--accent-purple);
+    font-size: 14px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#home-tab {
+    background-color: var(--light-gray)
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    background-color: var(--light-pink);
+    width: var(--homepage-width);
+    padding: 25px;
+    /* overflow: auto; */
+    min-height: 100vh;
+    height: max-content;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 25px;
+
+}
+
+img {
+    
 }
 
 .menu-section {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-section-title {
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--light-gray);
 }
 
 .menu-item {
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
     
 }
 
 .item-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -30,5 +112,15 @@ body {
 }
 
 .item-price {
-    font-size: 20px;
+    font-size: 12px;
+}
+
+.homepage-text {
+    color: var(--accent-purple);
+}
+
+footer {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }

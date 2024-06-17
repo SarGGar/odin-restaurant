@@ -6,24 +6,33 @@ import desserts from './data/desserts.yaml';
 function loadMenuPage(domParent) {
     console.log(appetizers)
     const startersDiv = document.createElement("div")
-    startersDiv.textContent = "Starters"
     startersDiv.classList.add("menu-section")
+    const startersSectionTitle = document.createElement("div")
+    startersSectionTitle.textContent = "Starters"
+    startersSectionTitle.classList.add("menu-section-title")
+    startersDiv.appendChild(startersSectionTitle)
     for (const app in appetizers.appetizers) {
         const app_dict = appetizers.appetizers[app]
         generateMenuItem(app_dict.name, app_dict.description, app_dict.price, startersDiv)
     }
 
     const mainsDiv = document.createElement("div")
-    mainsDiv.textContent = "Mains"
     mainsDiv.classList.add("menu-section")
+    const mainsSectionTitle = document.createElement("div")
+    mainsSectionTitle.textContent = "Mains"
+    mainsSectionTitle.classList.add("menu-section-title")
+    mainsDiv.appendChild(mainsSectionTitle)
     for (const main in mains.mains) {
         const main_dict = mains.mains[main]
         generateMenuItem(main_dict.name, main_dict.description, main_dict.price, mainsDiv)
     }
 
     const dessertsDiv = document.createElement("div")
-    dessertsDiv.textContent = "Desserts"
     dessertsDiv.classList.add("menu-section")
+    const dessertsSectionTitle = document.createElement("div")
+    dessertsSectionTitle.textContent = "Desserts"
+    dessertsSectionTitle.classList.add("menu-section-title")
+    dessertsDiv.appendChild(dessertsSectionTitle)
     for (const dessert in desserts.desserts) {
         const dessert_dict = desserts.desserts[dessert]
         generateMenuItem(dessert_dict.name, dessert_dict.description, dessert_dict.price, dessertsDiv)

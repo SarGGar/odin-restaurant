@@ -11,3 +11,27 @@ mains:
     name: Pasta Dish
     description: A wonderful comfort food pasta dish for the emotionally weak.
     price: 24 CHF
+  3: 
+    name: Sarah's Speciality
+    description: A daily surprise
+    price: 50 CHF
+  4: 
+    name: Liebling Love
+    description: Contains aphrodyxiac
+    price: 100 CHF
+  5: 
+    name: Adventure
+    description: unknown
+    price: 5 CHF
+  6: 
+    name: Sarah's Speciality
+    description: A daily surprise
+    price: 50 CHF
+  7: 
+    name: Liebling Love
+    description: Contains aphrodyxiac
+    price: 100 CHF
+  8: 
+    name: Adventure
+    description: unknown
+    price: 5 CHF
